@@ -1,0 +1,13 @@
+{
+  "name": "taskflow",
+  "version": "1.0.0",
+  "scripts": {
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "build": "cd client && npm install && npm run build",
+    "start": "cd server && npm start",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "db:setup": "cd server && npm run db:generate && npm run db:push",
+    "postinstall": "cd server && npm install && cd ../client && npm install"
+  }
+}
